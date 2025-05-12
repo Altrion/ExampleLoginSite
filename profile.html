@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sample Site > Profile</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+    <script src="./PrimaryScript.js"></script>
+    <script src="./SigningHandle.js"></script>
+
+    <link href='https://fonts.googleapis.com/css?family=Lexend Deca' rel='stylesheet'>
+    <script>
+        document.addEventListener("DOMContentLoaded", function(arg) {
+            window.onload=SessionVisual.CheckLoggedIn();
+        });
+    </script>
+</head>
+<body>
+    <main>
+        <div class="CenterBorder">
+
+        </div>
+        <div class="CenterBorder" style="z-index: -1;">
+            
+        </div>
+        <div class="CenterPanel">
+            <div class="CenterElement" style="width: 100%;height: 100%;margin: 0;position: absolute;visibility: hidden;">
+                <p id="infoUser" class="CenterFont">Username: ##</p>
+                <p id="infoEmail" class="CenterFont">Email: ##</p>
+                <p id="infoId" class="CenterFont">ID: ##</p>
+                <p id="infoRegAt" class="CenterFont">Registerd at: ##</p>
+                <br><br>
+                <p id="infoLogAt" class="CenterFont">Logged in at: ##</p>
+
+            </div>
+            <div class="CenterButtonConfirm" onclick="">
+                <p>Login</p>
+            </div>
+        </div>
+
+    </main>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sample Site > Login</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+    <script src="./PrimaryScript.js"></script>
+    <script src="./SigningHandle.js"></script>
+
+    <link href='https://fonts.googleapis.com/css?family=Lexend Deca' rel='stylesheet'>
+
+</head>
+<body>
+    <main>
+        <div class="CenterBorder">
+
+        </div>
+        <div class="CenterBorder" style="z-index: -1;">
+            
+        </div>
+        <div class="CenterPanel">
+            <div class="CenterElement">
+                <p class="CenterFont">Email</p>
+                <input class="CenterFont CenterElementInput" oninput="SessionVisual.CheckEmail()" type="email" id="loginEmail" >
+                <p id="displayEmailFault" class="CenterFont" style=" margin-top: 8px; color: rgb(253, 36, 36);font-size: 14px;visibility: hidden;">- This Email is Invalid!</p>
+            </div>
+            <div class="CenterElement CenterLoginPassword">
+                <p class="CenterFont">Password</p>       
+                <div class="CenterPasswordReveal disableSelect">
+                    <input class="CenterPasswordRevealToggle" id="revealPassword" autocomplete="off" onchange="SessionVisual.ShowPassword(this.checked)" type="checkbox">
+                    <label for="revealPassword enableSelect" class="CenterFont">Show Password</label>
+                </div>
+                <input class="CenterFont CenterElementInput" oninput="SessionVisual.CheckPassword()" autocomplete="off" id="loginPassword" type="password">
+                <p id="displayPassFault" class="CenterFont" style=" margin-top: 8px; color: rgb(253, 36, 36);font-size: 14px;visibility: visible;"></p>
+
+            </div>
+            <div class="CenterButtonConfirm" onclick="onLoginClick()">
+                <p>Login</p>
+            </div>
+        </div>
+        <div class="accountSuggestionPanel" onclick="MoveWindow.Register();"> <p class="accountSuggestion">Dont have an account? Click here to register.</p></div>
+    </main>
+</body>
+</html>
