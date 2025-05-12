@@ -212,6 +212,7 @@ const SessionVisual = {
             accinfo.style.visibility="visible";
             confirmbutton.children[0].innerHTML="Logout";
             confirmbutton.setAttribute( "onClick", "javascript: onLogout();" )
+            SessionVisual.LoginInfoWrite();
         } else {
             accinfo.style.visibility="hidden"
             MoveWindow.Login();
